@@ -1,0 +1,16 @@
+html {
+    margin: 3em;
+}
+body{
+    background-color: #cdc673;
+    background-image: url("./images/about-me-bg-maclaren.jpg");
+    background-repeat: repeat-y;
+    background-size:auto;
+}
+h1{
+    color:#6b8e23;
+
+}
+h2{
+    color: royalblue;
+}
