@@ -10,7 +10,7 @@ body {
     border-radius: .5em;
     width: 75%;
     font-size:1em;
-    background-color: #cdc673;
+    background-color: #baa693;
     box-shadow:  2em -1em 1em #6b8e23;
 
 }
@@ -38,27 +38,26 @@ h2{
     text-align: center;
     color:	#A0403E;
     font-size:1.5em;
-    text-decoration: wavy underline overline ;
+    text-decoration: underline overline ;
 }
 
 table{
     background-color: #000;
         display:block;
       border-top:  .5em ridge #a0403e;
-    color:#cdc673;
+    color:#baa693;
 }
 table h2{
-    color: #cdc673;
+    color: #a0403e;
     text-decoration:none;
 }
 caption{
-    background: linear-gradient(45deg, #364712, 33%, #6b8e23);
-    color: #cdc673;
+    background: linear-gradient(145deg, #364712, #cdc673);
+    color: #a0403e;
 }
 tr{ border-top:.5em ridge #a0403e;
     font-size: 1em;
     text-align:left;
-
 }
 tbody tr:nth-child(odd) {
     background-color: #364712;
@@ -69,6 +68,7 @@ td{
     border: ridge #a0403e;
 }
 tbody tr:nth-child(even) {
-    background-color: #cdc673;
-    color: #a0403e;
+    background-color: #baa693;
+    color: #364712;
+    font-weight: bold;
 }
