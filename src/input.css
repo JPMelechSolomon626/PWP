@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*Containers
+Formatting for container ONLY.  So only body and .$ or #$
+*/
+body{
+    margin: 1em 5em;
+    background-color: darkolivegreen;
+}
+
