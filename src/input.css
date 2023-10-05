@@ -4,8 +4,55 @@
 /*Containers
 Formatting for container ONLY.  So only body and .$ or #$
 */
-body{
-    margin: 1em 5em;
-    background-color: darkolivegreen;
+html{
+    margin:5rem auto;
+    display:inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: .5fr 0.5fr 0.5fr 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: .5em 0.5em;
+}
+header{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
 }
 
+#monogram {
+    grid-area: 1 / 1 / 7/ 3;
+    grid-column-start: 1
+}
+#monoimg{
+    width:300px;
+    height: auto;
+}
+#navbar {
+    grid-area: 1 / 3 / 3 /7;
+
+}
+#title {
+    grid-area: 3 /3/7/7;
+}
+
+
+body{
+    margin: 1em 5em;
+   bg-image: url("/images/maclarenTartan.jpg");
+}
+#jumbotron{
+    grid-area: 7/3/11/7;
+
+}
+
+#aside{
+    grid-area:7/1/16/3;
+}
+
+#portfolio{
+    grid-area:11/3/16/5;
+}
+#contactForm{
+    grid-area:11/5/16/7;
+}
