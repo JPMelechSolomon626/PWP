@@ -2,16 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <header>
-    <nav>
+
+    <div id="monogram">
+        <img src="../images/jpms-graphic-design-logo.png" alt="a company logo for JPMS Graphic Design consisting of a beige circle with the Company name and to opposite facing Cornish chough heads superimposed on 3 concentric triangles of green pink and red"/>
+    </div>
+
+    <nav class="container bg-[#cdc673]  p-4 flex space-x-8 m-0 border-8 border-[#a0403e] border-solid rounded md:justify-normal md:my-12 md:mx-24">
         <button>
             Home
         </button>
+        <button class="md:hidden" alt="hamburger button">&#9776</button>
         <button>
             Resume
         </button>
@@ -26,27 +30,42 @@
         </button>
 
     </nav>
-    <h1>Josef Pinchas Melech, <abbr title="Doctor of Philosophy">PhD</abbr> <abbr title="Doctor of Sciences">SciD</abbr>
-        <abbr title="National Registry of Emergency Medical Technicians-Paramedic">NREMT-P</abbr></h1>
-    <h2>I could calculate our chances of survival.  But you won't like them.</h2>
-    <h3>Marvin the melancholy robot, Hitchhiker's Guide to the Galaxy, Douglas Adams</h3>
+    <div id="title">
+        <h1>Josef Pinchas Melech, <abbr title="Doctor of Philosophy">PhD</abbr> <abbr
+                title="Doctor of Sciences">SciD</abbr>
+            <abbr title="National Registry of Emergency Medical Technicians-Paramedic">NREMT-P</abbr></h1>
+        <div class="flavorText">
+            <h2>I could calculate our chances of survival. But you won't like them.</h2>
+            <h3>Marvin the melancholy robot, Hitchhiker's Guide to the Galaxy, Douglas Adams</h3>
+        </div>
+    </div>
 </header>
 <body>
 <div id="jumbotron">
-    <p> A "military brat" from birth, Josef grew up around punch cards and reel to reel computing.  Over the course of his life has seen the world move from the Analog Age, through the Digital Age and finally into the Cyber Age. He has always had an interest in computers and computing learning Basic on the Commodore 64.</p>
-       <p>While an undergraduate at the University of Oklahoma Josef witnessed the birth of the internet.  Shortly after he began hobby coding HTML by parsing code off Netscape of his favorite Sites.
+    <h2 class ="flex text-decoration-line: underline justify-center underline-offset-8"><strong>From Everywhere and Nowhere to Here</strong></h2>
+    <p> <img class="height" src="../images/headshot-tortise-glasses.jpg" alt="a photo of Josef P Melech-Solomon"/>A "military brat" from birth, Josef grew up in 8 different countries and 5 states all the while being around punch cards and reel to reel computing. Over the course of
+        his life has seen the world move from the Analog Age, through the Digital Age and finally into the Cyber Age. He
+        has always had an interest in computers and computing learning Basic on the Commodore 64.</p>
+    <p>
+        When not "geeking out" over computers, Josef maintained active involvement in the Boy Scouts of America and Equity USO touring shows.  As such he received his first Union Card at the age of 9 and both the Arrow of Light.  At the age of 15 and after 1897 performances over six different musicals, Josef retired from acting to finish the last few requirements for the  Eagle Scout rank.
     </p>
     <p>
-        After pursuing a two and a half decade career in public safety as a paramedic wildland firefighter and correctional officer, Josef decided to pursue a career in full stack development.
+        Josef started his first college courses at 16.  His scouting career led him to an interest in being a first responder.  He finished his EMT-B at 16 and paramedic a year later.  He would have to wait four months before he would be old enough to legally practice.  By the time of his his high school graduation he already had his first Associate of Applied Science Degree.  His undergraduate days would see him shift gears into criminal forensics, properly called criminalistics, and Forensic Psychology.  Time would see him receive a masters and eventual PhD in both fields. His career at graduation saw him move to the Federal Bureau of Prisons where he started as a medic.  Over a two and a half decade career he would take opportunities to improve his skill set becoming a Crew Leader for an Inmate Wildland Fire Crew, Intake and assessment officer 1 and eventually administrative under-warden.
+    </p>
+    <p>While an undergraduate at the University of Oklahoma Josef witnessed the birth and progress of the internet. Shortly after he
+        began hobby coding HTML by parsing code off Netscape of his favorite Sites. He maintained an active interest in web-development following trends and updating his skill set as time would allow.
+    </p>
+    <p>
+        His career in public safety as a paramedic wildland firefighter and correctional officer eventually ended with a diagnosis of Multiple Sclerosis in 20013. Frustrated with boredom and lack of contribution to his community, Josef decided to pursue a career in full stack development.
     </p>
 </div>
-<div class="aside">
+<div id="languages">
     <h2><strong>Languages</strong></h2>
     <hr/>
     <ul>Computing Languages
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>SQL</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>SQL</li>
     </ul>
     <ul>
         Programs and Applications
@@ -65,26 +84,58 @@
         <li>Polish, Krakowiac/Silesian, native speaker</li>
     </ul>
 </div>
-<div>
-    <a href="/">Art Deco Radio Theatre</a>
-    <p> Former Audio podcast that was home to the Brother Kings and Philo and Scot.  </p>
-    <a href="/">Basil's Tonsorial Emporium</a>
-    <p>A forthcoming small business selling bespoke grooming and hygiene products with an Edwardian Flare.</p>
-    <a href="/">Truck Hunter</a>
-    <p>Capstone Project from <a href="https://deepdivecoding.com">Deep Dive Coding </a>at <a href="https://cnmingenuity.org">CNM Ingenuity</a> through <a href="https://cnm.edu">Central New Mexico Community College</a>
+<div id="portfolio">
+    <h2>
+        Portolio
+    </h2>
+    <em>
+        This section will be modified with a carousel type show to increase interactivity.
+    </em>
+    <a href="/"><img src="../images/ARDTlogo-sm.png" />
+        <h2>
+            Art Deco Radio Theatre
+        </h2>
+    </a>
+    <p>
+        Former Audio podcast that was home to the Brother Kings and Philo and Scot.
+    </p>
+    <a href="/"><img src="../images/tea-plantation.jpg"/>
+        <h2>The Gentleman's Cup of Tea
+        </h2>
+    </a>
+    <p>
+        Preview and Proof of concept site for 1/2 special interest show for Youtube called The Gentleman's Cup of Tea. A Show about culture, etiquette, grooming and masculinity without the toxicity
+    </p>
+    <a href="/">
+        <img class="h-16 w-16" src="../images/hairwax-lable.png" >Basil's Tonsorial Emporium</a>
+    <p>A forthcoming small business selling bespoke grooming and hygiene products with an Edwardian Flare and sister venture with The Gentlemans Cup of Tea.</p>
+    <a href="/"><img src="../images/as-you-like-it-adam-2018.jpg"  ><h2>Actor's Space</h2></a>
+        <p>Personal Acting Resume of Josef P Melech, known on stage as Josef Steven Fisher</p>
+    <p>
 </div>
-<div>
+<div id="contact">
     <form>
-        Name
-        Email
-        subject
-        message
-        <button>submit</button>
-        <button>Clear</button>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" id="subject">
+        </div>
+        <div>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="50" rows="10"></textarea>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+
     </form>
 </div>
 <footer>
     &copy 2023 Josef P Melech
 </footer>
 </body>
+<link rel="stylesheet" href="../src/input.css">
 </html>
