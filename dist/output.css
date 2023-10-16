@@ -445,19 +445,22 @@ html {
 }
 
 :root {
-  color-scheme: light;
-  --pf: 259 94% 44%;
-  --sf: 314 100% 40%;
-  --af: 174 75% 39%;
-  --nf: 214 20% 14%;
-  --in: 198 93% 60%;
-  --su: 158 64% 52%;
-  --wa: 43 96% 56%;
-  --er: 0 91% 71%;
-  --inc: 198 100% 12%;
-  --suc: 158 100% 10%;
-  --wac: 43 100% 11%;
-  --erc: 0 100% 14%;
+  --p: 82 39% 30%;
+  --pf: 82 39% 23%;
+  --sf: 29 22% 58%;
+  --af: 1 44% 37%;
+  --nf: 213 18% 13%;
+  --b2: 212 18% 7%;
+  --b3: 0 0% 0%;
+  --bc: 214 3% 81%;
+  --pc: 79 18% 85%;
+  --sc: 29 9% 14%;
+  --ac: 6 46% 89%;
+  --nc: 215 5% 82%;
+  --inc: 253 17% 83%;
+  --suc: 238 74% 93%;
+  --wac: 39 47% 13%;
+  --erc: 3 29% 15%;
   --rounded-box: 1rem;
   --rounded-btn: 0.5rem;
   --rounded-badge: 1.9rem;
@@ -468,134 +471,14 @@ html {
   --border-btn: 1px;
   --tab-border: 1px;
   --tab-radius: 0.5rem;
-  --p: 259 94% 51%;
-  --pc: 259 96% 91%;
-  --s: 314 100% 47%;
-  --sc: 314 100% 91%;
-  --a: 174 75% 46%;
-  --ac: 174 75% 11%;
-  --n: 214 20% 21%;
-  --nc: 212 19% 87%;
-  --b1: 0 0% 100%;
-  --b2: 0 0% 95%;
-  --b3: 180 2% 90%;
-  --bc: 215 28% 17%;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-    --pf: 262 80% 43%;
-    --sf: 316 70% 43%;
-    --af: 175 70% 34%;
-    --in: 198 93% 60%;
-    --su: 158 64% 52%;
-    --wa: 43 96% 56%;
-    --er: 0 91% 71%;
-    --inc: 198 100% 12%;
-    --suc: 158 100% 10%;
-    --wac: 43 100% 11%;
-    --erc: 0 100% 14%;
-    --rounded-box: 1rem;
-    --rounded-btn: 0.5rem;
-    --rounded-badge: 1.9rem;
-    --animation-btn: 0.25s;
-    --animation-input: .2s;
-    --btn-text-case: uppercase;
-    --btn-focus-scale: 0.95;
-    --border-btn: 1px;
-    --tab-border: 1px;
-    --tab-radius: 0.5rem;
-    --p: 262 80% 50%;
-    --pc: 0 0% 100%;
-    --s: 316 70% 50%;
-    --sc: 0 0% 100%;
-    --a: 175 70% 41%;
-    --ac: 0 0% 100%;
-    --n: 213 18% 20%;
-    --nf: 212 17% 17%;
-    --nc: 220 13% 69%;
-    --b1: 212 18% 14%;
-    --b2: 213 18% 12%;
-    --b3: 213 18% 10%;
-    --bc: 220 13% 69%;
-  }
-}
-
-[data-theme=light] {
-  color-scheme: light;
-  --pf: 259 94% 44%;
-  --sf: 314 100% 40%;
-  --af: 174 75% 39%;
-  --nf: 214 20% 14%;
-  --in: 198 93% 60%;
-  --su: 158 64% 52%;
-  --wa: 43 96% 56%;
-  --er: 0 91% 71%;
-  --inc: 198 100% 12%;
-  --suc: 158 100% 10%;
-  --wac: 43 100% 11%;
-  --erc: 0 100% 14%;
-  --rounded-box: 1rem;
-  --rounded-btn: 0.5rem;
-  --rounded-badge: 1.9rem;
-  --animation-btn: 0.25s;
-  --animation-input: .2s;
-  --btn-text-case: uppercase;
-  --btn-focus-scale: 0.95;
-  --border-btn: 1px;
-  --tab-border: 1px;
-  --tab-radius: 0.5rem;
-  --p: 259 94% 51%;
-  --pc: 259 96% 91%;
-  --s: 314 100% 47%;
-  --sc: 314 100% 91%;
-  --a: 174 75% 46%;
-  --ac: 174 75% 11%;
-  --n: 214 20% 21%;
-  --nc: 212 19% 87%;
-  --b1: 0 0% 100%;
-  --b2: 0 0% 95%;
-  --b3: 180 2% 90%;
-  --bc: 215 28% 17%;
-}
-
-[data-theme=dark] {
-  color-scheme: dark;
-  --pf: 262 80% 43%;
-  --sf: 316 70% 43%;
-  --af: 175 70% 34%;
-  --in: 198 93% 60%;
-  --su: 158 64% 52%;
-  --wa: 43 96% 56%;
-  --er: 0 91% 71%;
-  --inc: 198 100% 12%;
-  --suc: 158 100% 10%;
-  --wac: 43 100% 11%;
-  --erc: 0 100% 14%;
-  --rounded-box: 1rem;
-  --rounded-btn: 0.5rem;
-  --rounded-badge: 1.9rem;
-  --animation-btn: 0.25s;
-  --animation-input: .2s;
-  --btn-text-case: uppercase;
-  --btn-focus-scale: 0.95;
-  --border-btn: 1px;
-  --tab-border: 1px;
-  --tab-radius: 0.5rem;
-  --p: 262 80% 50%;
-  --pc: 0 0% 100%;
-  --s: 316 70% 50%;
-  --sc: 0 0% 100%;
-  --a: 175 70% 41%;
-  --ac: 0 0% 100%;
+  --s: 29 22% 65%;
+  --a: 1 44% 44%;
   --n: 213 18% 20%;
-  --nf: 212 17% 17%;
-  --nc: 220 13% 69%;
   --b1: 212 18% 14%;
-  --b2: 213 18% 12%;
-  --b3: 213 18% 10%;
-  --bc: 220 13% 69%;
+  --in: 241 53% 21%;
+  --su: 225 73% 57%;
+  --wa: 43 96% 56%;
+  --er: 0 91% 71%;
 }
 
 *, ::before, ::after {
@@ -781,6 +664,179 @@ html {
   }
 }
 
-/*Containers
-Formatting for container ONLY.  So only body and .$ or #$
-*/
+html{
+  background-image: url("../images/maclarenTartan.jpg");
+}
+
+body{
+  background-color: #556b2f;
+  border: ridge #a0403e .25em;
+  margin: auto;
+}
+
+header{
+  border: #cfb53b .25rem ridge;
+  margin: 1rem;
+}
+
+#logo{
+  background-color:#000000;
+  justify-self: stretch;
+  align-self: stretch;
+  padding: .5em;
+  height: 5rem;
+}
+
+#logo img{
+  height: 8rem;
+}
+
+.navbg{
+  background-color: #1a1952;
+}
+
+.navButton {
+  background-color: #baa693;
+  border: 2px solid #a0403e;
+  border-radius: 30px;
+  box-shadow: #a0403e 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.navButton:hover {
+  background-color: #fff;
+}
+
+.navButton:active {
+  box-shadow: #a0403e 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .navButton {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+hr {
+  display: block;
+  height: 2rem;
+  border-top: 2rem solid #fff200;
+  margin: 1em 0;
+  padding: 0;
+}
+
+#title{
+  text-align: center;
+}
+
+#title h1{
+  color: #a0403e;
+  font-size: 2rem;
+}
+
+.lang{
+  border: #a0403e ridge .25rem;
+  background-color: #1a1952;
+  margin:1rem;
+  padding:2.5rem;
+}
+
+#jumbotron{
+  background-color: #a0403e;
+  color: #dcdcdc;
+  margin:1rem;
+  padding:1.5rem;
+  border: .5rem #baa693 ridge;
+  text-justify: auto ;
+}
+
+section{
+  background-color:;
+}
+
+#jumbotron h2{
+  font-face: 'BRADHITC';
+  color: #baa693;
+  border:ridge #baa693 .25rem;
+  height: 4rem;
+  padding:1rem;
+  background-color: #1a1952;
+}
+
+#jumbotron p {
+  margin-top: 1rem;
+}
+
+#jumbotron img{
+  height:12rem;
+  float: left;
+  margin-top:1rem;
+  margin-right: 1rem;
+  border: #baa693 ridge .5rem;
+}
+
+#portfolio{
+  color: #cfb53b;
+  background-color:#1a1952;
+  border: #a0403e ridge .25rem;
+  margin:1rem;
+  padding:1rem;
+}
+
+.carousel img{
+  width: 8rem;
+  float: left;
+  margin-top:1rem;
+  margin-right: 1rem;
+  border: ridge #a0403e .25rem;
+}
+
+.carousel h2{
+  margin:.5rem;
+  font-size: 1.5rem;
+  -webkit-text-decoration: underline overline #cfb53b;
+          text-decoration: underline overline #cfb53b;
+}
+
+#contact{
+  color: #cfb53b;
+  background-color:#1a1952;
+  border: #a0403e ridge .25rem;
+  margin:1rem;
+  padding:1rem;
+}
+
+#contact div{
+  margin:1rem;
+}
+
+#contact button{
+  color:#1a1952;
+  border: #a0403e ridge .25rem;
+  border-radius: .5rem;
+  background-color: #f0e68c;
+  padding:.5rem;
+  margin:1rem;
+}
+
+footer{
+  margin:1rem;
+  background-color: #000;
+  padding:.5rem;
+  border: #a0403e .25rem ridge;
+  color: #4169e1;
+}

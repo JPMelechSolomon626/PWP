@@ -4,79 +4,77 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../dist/output.css">
 </head>
-<header>
 
-    <div id="monogram">
-        <img src="../images/jpms-graphic-design-logo.png" alt="a company logo for JPMS Graphic Design consisting of a beige circle with the Company name and to opposite facing Cornish chough heads superimposed on 3 concentric triangles of green pink and red"/>
+<body class="container mx-auto mt-4 inline-grid ">
+<section>
+<header class="inline-grid border-[#baa693] bg-[url('../images/maclarenTartan.jpg')] row-start-1 row-span-3 ">
+
+    <div  class="m-4 col-start-1 row-start-1 row-span-1 col-span-2 bg-[#000] border-4 border-blue-700 p-3 mask-parallelogram-4">
+
+        <img class="h-20" src="../images/jpms-graphic-design-logo.png" alt="a company logo for JPMS Graphic Design consisting of a beige circle with the Company name and to opposite facing Cornish chough heads superimposed on 3 concentric triangles of green pink and red"/>
     </div>
-
-    <nav class="container bg-[#cdc673]  p-4 flex space-x-8 m-0 border-8 border-[#a0403e] border-solid rounded md:justify-normal md:my-12 md:mx-24">
-        <button>
+    <div class="navbg inline-grid gap-2 row-start-1 col-start-3 row-span-1 col-span-12 border-4 border-[#a0403e] border-ridge m-4 p-2 content-center ">
+    <nav class="inline-flex  space-x-4 align-middle ">
+        <button class="navButton">
             Home
         </button>
-        <button class="md:hidden" alt="hamburger button">&#9776</button>
-        <button>
+        <button class="md:hidden">&#9776</button>
+        <div class="hidden md:block space-x-8">
+        <button class="navButton">
             Resume
         </button>
-        <button>
+        <button class="navButton">
             Portfolio
         </button>
-        <button>
+        <button class="navButton">
             Milestone 1
         </button>
-        <button>
+        <button class="navButton">
             Milestone 2
         </button>
-
+        </div>
     </nav>
-    <div id="title">
-        <h1>Josef Pinchas Melech, <abbr title="Doctor of Philosophy">PhD</abbr> <abbr
+    </div>
+    <div id="title" class="bg-[#baa693] row-start-3 col-span-12 row-span-2 m-3 ">
+        <h1 class="text-[#a0403e] text-3xl justify-center">Josef Pinchas Melech, <abbr title="Doctor of Philosophy">PhD</abbr> <abbr
                 title="Doctor of Sciences">SciD</abbr>
             <abbr title="National Registry of Emergency Medical Technicians-Paramedic">NREMT-P</abbr></h1>
-        <div class="flavorText">
-            <h2>I could calculate our chances of survival. But you won't like them.</h2>
-            <h3>Marvin the melancholy robot, Hitchhiker's Guide to the Galaxy, Douglas Adams</h3>
+        <div id="flavorText" class="col-start-2 col-span-7 text-[#354611] justify-center">
+
+            <h2 class="text-[#344611]">I could calculate our chances of survival. But you won't like them.</h2>
+            <h3 class="text-[#344611]">Marvin the melancholy robot, Hitchhiker's Guide to the Galaxy, Douglas Adams</h3>
         </div>
     </div>
 </header>
-<body>
-<div id="jumbotron">
-    <h2 class ="flex text-decoration-line: underline justify-center underline-offset-8"><strong>From Everywhere and Nowhere to Here</strong></h2>
-    <p> <img class="height" src="../images/headshot-tortise-glasses.jpg" alt="a photo of Josef P Melech-Solomon"/>A "military brat" from birth, Josef grew up in 8 different countries and 5 states all the while being around punch cards and reel to reel computing. Over the course of
-        his life has seen the world move from the Analog Age, through the Digital Age and finally into the Cyber Age. He
-        has always had an interest in computers and computing learning Basic on the Commodore 64.</p>
-    <p>
-        When not "geeking out" over computers, Josef maintained active involvement in the Boy Scouts of America and Equity USO touring shows.  As such he received his first Union Card at the age of 9 and both the Arrow of Light.  At the age of 15 and after 1897 performances over six different musicals, Josef retired from acting to finish the last few requirements for the  Eagle Scout rank.
-    </p>
-    <p>
-        Josef started his first college courses at 16.  His scouting career led him to an interest in being a first responder.  He finished his EMT-B at 16 and paramedic a year later.  He would have to wait four months before he would be old enough to legally practice.  By the time of his his high school graduation he already had his first Associate of Applied Science Degree.  His undergraduate days would see him shift gears into criminal forensics, properly called criminalistics, and Forensic Psychology.  Time would see him receive a masters and eventual PhD in both fields. His career at graduation saw him move to the Federal Bureau of Prisons where he started as a medic.  Over a two and a half decade career he would take opportunities to improve his skill set becoming a Crew Leader for an Inmate Wildland Fire Crew, Intake and assessment officer 1 and eventually administrative under-warden.
-    </p>
-    <p>While an undergraduate at the University of Oklahoma Josef witnessed the birth and progress of the internet. Shortly after he
-        began hobby coding HTML by parsing code off Netscape of his favorite Sites. He maintained an active interest in web-development following trends and updating his skill set as time would allow.
-    </p>
-    <p>
-        His career in public safety as a paramedic wildland firefighter and correctional officer eventually ended with a diagnosis of Multiple Sclerosis in 20013. Frustrated with boredom and lack of contribution to his community, Josef decided to pursue a career in full stack development.
-    </p>
-</div>
-<div id="languages">
-    <h2><strong>Languages</strong></h2>
+</section>
+<section class="inline-grid">
+<div  class="lang col-start-1 col-span-2 row-start-3 row-span-4 py-4 px-10 bg-[#1a1952] border-[#fff200] border-4 border-ridge ml-4 mr-4">
+    <h2 class="text-xl text-[#fff200]"><strong>Languages And Applications</strong></h2>
     <hr/>
-    <ul>Computing Languages
+    <ul class="mb-3 list-disc"><h3 class=" my-2 text-lg text-[#fff000]">Computing Languages</h3>
+        <hr/>
         <li>HTML</li>
         <li>CSS</li>
         <li>SQL</li>
     </ul>
-    <ul>
-        Programs and Applications
+    <ul class="mb-3 list-disc">
+        <h3 class=" my-2 text-lg text-[#fff000]">Programs and Applications</h3>
+        <hr/>
         <li>Postgress SQL</li>
         <li>TailwindCSS</li>
         <li>Visual Studio Code</li>
         <li>JS Fiddle</li>
         <li>Figma</li>
+        <li>insomnia</li>
+        <li>Balsamiq</li>
+        <li>Express</li>
+        <li>Docker</li>
     </ul>
-    <ul>
-        Human Languages
+    <ul class="list-disc">
+        <h3 class=" my-2 text-lg text-[#fff000]">Human Languages</h3>
+        <hr/>
         <li>English, mother tongue speak read write</li>
         <li>German, Goethe C1, speak read write</li>
         <li>Hebrew, Modern, Bet Level, speak read write</li>
@@ -84,39 +82,36 @@
         <li>Polish, Krakowiac/Silesian, native speaker</li>
     </ul>
 </div>
-<div id="portfolio">
-    <h2>
-        Portolio
-    </h2>
-    <em>
-        This section will be modified with a carousel type show to increase interactivity.
-    </em>
-    <a href="/"><img src="../images/ARDTlogo-sm.png" />
-        <h2>
-            Art Deco Radio Theatre
-        </h2>
-    </a>
-    <p>
-        Former Audio podcast that was home to the Brother Kings and Philo and Scot.
-    </p>
-    <a href="/"><img src="../images/tea-plantation.jpg"/>
-        <h2>The Gentleman's Cup of Tea
-        </h2>
-    </a>
-    <p>
-        Preview and Proof of concept site for 1/2 special interest show for Youtube called The Gentleman's Cup of Tea. A Show about culture, etiquette, grooming and masculinity without the toxicity
-    </p>
-    <a href="/">
-        <img class="h-16 w-16" src="../images/hairwax-lable.png" >Basil's Tonsorial Emporium</a>
-    <p>A forthcoming small business selling bespoke grooming and hygiene products with an Edwardian Flare and sister venture with The Gentlemans Cup of Tea.</p>
-    <a href="/"><img src="../images/as-you-like-it-adam-2018.jpg"  ><h2>Actor's Space</h2></a>
-        <p>Personal Acting Resume of Josef P Melech, known on stage as Josef Steven Fisher.</p>
-    <p>
-</div>
-<div id="contact">
+    <div id="jumbotron" class="
+      row-start-3 col-start-3 row-span-4 col-span-7 p-2">
+        <h2 class ="flex text-decoration-line: underline justify-center underline-offset-8"><strong>From Everywhere and Nowhere to Here</strong></h2>
+        <p> <img class="" src="../images/headshot-tortoise-glasses.jpg" alt="a photo of Josef P Melech-Solomon"/>A "military brat" from birth, Josef grew up in 8 different countries and 5 states all the while being around punch cards and reel to reel computing. Over the course of
+            his life has seen the world move from the Analog Age, through the Digital Age and finally into the Cyber Age. He
+            has always had an interest in computers and computing learning Basic on the Commodore 64.</p>
+        <p>
+            When not "geeking out" over computers, Josef maintained active involvement in the Boy Scouts of America and Equity USO touring shows.  As such he received his first Union Card at the age of 9 and both the Arrow of Light.  At the age of 15 and after 1897 performances over six different musicals, Josef retired from acting to finish the last few requirements for the  Eagle Scout rank.
+        </p>
+        <p>
+            Josef started his first college courses at 16.  His scouting career led him to an interest in being a first responder.  He finished his EMT-B at 16 and paramedic a year later.  He would have to wait four months before he would be old enough to legally practice.  By the time of his his high school graduation he already had his first Associate of Applied Science Degree.  His undergraduate days would see him shift gears into criminal forensics, properly called criminalistics, and Forensic Psychology.  Time would see him receive a masters and eventual PhD in both fields. His career at graduation saw him move to the Federal Bureau of Prisons where he started as a medic.  Over a two and a half decade career he would take opportunities to improve his skill set becoming a Crew Leader for an Inmate Wildland Fire Crew, Intake and assessment officer 1 and eventually administrative under-warden.
+        </p>
+        <p>While an undergraduate at the University of Oklahoma Josef witnessed the birth and progress of the internet. Shortly after he
+            began hobby coding HTML by parsing code off Netscape of his favorite Sites. He maintained an active interest in web-development following trends and updating his skill set as time would allow.
+        </p>
+        <p>
+            His career in public safety as a paramedic wildland firefighter and correctional officer eventually ended with a diagnosis of Multiple Sclerosis in 20013. Frustrated with boredom and lack of contribution to his community, Josef decided to pursue a career in full stack development.
+        </p>
+    </div>
+</section>
+
+<section>
+
+
+
+
+<div id="contact" class="row-start-7 col-start-6 row-span-4 col-span-5 p-2 mr-4">
     <form>
         <div>
-            <label for="name">Name</label>
+            <label for="name"> Name</label>
             <input type="text" name="name" id="name">
         </div>
         <div>
@@ -125,17 +120,15 @@
         </div>
         <div>
             <label for="message">Message</label>
-            <textarea name="message" id="message" cols="50" rows="10"></textarea>
+            <textarea name="message" id="message" cols="75" rows="25"></textarea>
         </div>
         <div>
             <button type="submit">Submit</button>
         </div>
-
     </form>
 </div>
-<footer>
-    &copy 2023 Josef P Melech
-</footer>
-</body>
-<link rel="stylesheet" href="../src/input.css">
-</html>
+</section>
+<script src="pwp.js"> </script>
+</body></html>
+
+<
