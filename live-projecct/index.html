@@ -4,63 +4,89 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="../dist/output.css">
+    <link href="../dist/output.css" rel="stylesheet">
 </head>
 
-<body class="container mx-auto mt-4 inline-grid ">
-<section>
-<header class="inline-grid border-[#baa693] bg-[url('../images/maclarenTartan.jpg')] row-start-1 row-span-3 ">
+<body class="container m-4 md:m4 inline-grid grid-cols-15 grid-rows-15 p-0 md:p-24">
 
-    <div  class="m-4 col-start-1 row-start-1 row-span-1 col-span-2 bg-[#000] border-4 border-blue-700 p-3 mask-parallelogram-4">
-
-        <img class="h-20" src="../images/jpms-graphic-design-logo.png" alt="a company logo for JPMS Graphic Design consisting of a beige circle with the Company name and to opposite facing Cornish chough heads superimposed on 3 concentric triangles of green pink and red"/>
+<header class="container row-start-1 col-start-1 row-span-3 col-span-15 md:mx-1.5 md:me-8 px-8">
+<section class="flex ">
+    <div  class=" flex-shrink order-1 inline-grid m-4 col-start-1 row-start-1 row-end-4 col-end-3 bg-[#000] border-4 border-blue-700 p-3 mask-parallelogram-4">
+        <img id="monogram" class="h-8 md:h-32" src="../images/jpms-graphic-design-logo.png" alt="a company logo for JPMS Graphic Design consisting of a beige circle with the Company name and to opposite facing Cornish chough heads superimposed on 3 concentric triangles of green pink and red"/>
     </div>
-    <div class="navbg inline-grid gap-2 row-start-1 col-start-3 row-span-1 col-span-12 border-4 border-[#a0403e] border-ridge m-4 p-2 content-center ">
-    <nav class="inline-flex  space-x-4 align-middle ">
+    <div class="order-2">
+    <nav class="bg-[#1a1952] flex grow row-start-1 col-start-9 items-center justify-between m-4 border-[#a04019] border-4 border-ridge p-4">
+        <div>
+            <div>
+                <span class="navButton"">
+                    home
+
+            </div>
+            <button class=" navButton md:hidden">&#9776</button>
+        </div><div class="hidden md:block space-x-8 flex-end order-2 md:flex flex-row justify-between p-4">
+
         <button class="navButton">
-            Home
-        </button>
-        <button class="md:hidden">&#9776</button>
-        <div class="hidden md:block space-x-8">
-        <button class="navButton">
-            Resume
-        </button>
-        <button class="navButton">
-            Portfolio
-        </button>
-        <button class="navButton">
-            Milestone 1
-        </button>
-        <button class="navButton">
-            Milestone 2
-        </button>
+
+                    portfolio
+
+            </button>
+            <button class="navButton">
+
+                resume
+
+            </button>
+            <button class="navButton">
+
+                Scouting CV
+
+            </button>
+                <button class="navButton">
+
+                Acting Resume
+
+
+            </button>
+                <button class="navButton">
+
+                milestone1
+
+                </button>
+                <button class="navButton">
+
+                milestone 2
+
+                </button> </span>
         </div>
-    </nav>
+        </nav>
     </div>
-    <div id="title" class="bg-[#baa693] row-start-3 col-span-12 row-span-2 m-3 ">
-        <h1 class="text-[#a0403e] text-3xl justify-center">Josef Pinchas Melech, <abbr title="Doctor of Philosophy">PhD</abbr> <abbr
+</section>
+    <section >
+    <div id="title" class="container order-3 bg-[#baa693] row-start-2 col-start-2 row-end-3 col-end-11 border-ridge border-4 border-[#a04019] mb-4">
+        <h1 class="text-[#a0403e] text-3xl justify-center mb-4">Josef Pinchas Melech, <abbr title="Doctor of Philosophy">PhD</abbr> <abbr
                 title="Doctor of Sciences">SciD</abbr>
             <abbr title="National Registry of Emergency Medical Technicians-Paramedic">NREMT-P</abbr></h1>
-        <div id="flavorText" class="col-start-2 col-span-7 text-[#354611] justify-center">
+        <div id="flavorText" class="text-[#354611] order-5 justify-center">
 
-            <h2 class="text-[#344611]">I could calculate our chances of survival. But you won't like them.</h2>
-            <h3 class="text-[#344611]">Marvin the melancholy robot, Hitchhiker's Guide to the Galaxy, Douglas Adams</h3>
+            <h2 class="text-[#344611] text-xl">I could calculate our chances of survival. But you won't like them.</h2>
+            <h3 class="text-[#344611] text-sm">Marvin the melancholy robot, Hitchhiker's Guide to the Galaxy, Douglas Adams</h3>
         </div>
     </div>
+
+    </section>
 </header>
-</section>
-<section class="inline-grid">
-<div  class="lang col-start-1 col-span-2 row-start-3 row-span-4 py-4 px-10 bg-[#1a1952] border-[#fff200] border-4 border-ridge ml-4 mr-4">
-    <h2 class="text-xl text-[#fff200]"><strong>Languages And Applications</strong></h2>
+
+<section class="container grid md:flex-col-reverse-reverse flex-wrap >
+<div id="lang" class="order-6 col-start-1 col-end-2 row-start-3 row-span-4 py-4 px-10 bg-[#1a1952]  border-4 border-ridge ms-4">
+    <h2><strong>Languages And Applications</strong></h2>
     <hr/>
-    <ul class="mb-3 list-disc"><h3 class=" my-2 text-lg text-[#fff000]">Computing Languages</h3>
+    <ul><h3>Computing Languages</h3>
         <hr/>
         <li>HTML</li>
         <li>CSS</li>
         <li>SQL</li>
     </ul>
-    <ul class="mb-3 list-disc">
-        <h3 class=" my-2 text-lg text-[#fff000]">Programs and Applications</h3>
+    <ul>
+        <h3>Programs and Applications</h3>
         <hr/>
         <li>Postgress SQL</li>
         <li>TailwindCSS</li>
@@ -72,8 +98,8 @@
         <li>Express</li>
         <li>Docker</li>
     </ul>
-    <ul class="list-disc">
-        <h3 class=" my-2 text-lg text-[#fff000]">Human Languages</h3>
+    <ul>
+        <h3>Human Languages</h3>
         <hr/>
         <li>English, mother tongue speak read write</li>
         <li>German, Goethe C1, speak read write</li>
@@ -82,8 +108,8 @@
         <li>Polish, Krakowiac/Silesian, native speaker</li>
     </ul>
 </div>
-    <div id="jumbotron" class="
-      row-start-3 col-start-3 row-span-4 col-span-7 p-2">
+
+    <div id="jumbotron" class="order-5  row-start-3 col-start-3 row-span-4 col-span-11 p-2">
         <h2 class ="flex text-decoration-line: underline justify-center underline-offset-8"><strong>From Everywhere and Nowhere to Here</strong></h2>
         <p> <img class="" src="../images/headshot-tortoise-glasses.jpg" alt="a photo of Josef P Melech-Solomon"/>A "military brat" from birth, Josef grew up in 8 different countries and 5 states all the while being around punch cards and reel to reel computing. Over the course of
             his life has seen the world move from the Analog Age, through the Digital Age and finally into the Cyber Age. He
@@ -103,32 +129,34 @@
     </div>
 </section>
 
+<section class="" >
+    <div >
+
+    </div>
+</section>
 <section>
-
-
-
-
-<div id="contact" class="row-start-7 col-start-6 row-span-4 col-span-5 p-2 mr-4">
+<div>
+<div class="contact container order-7 row-start-7 col-start-6 row-span-4 col-span-5 p-2 m-4">
     <form>
         <div>
             <label for="name"> Name</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" class="border-ridge border-2 border-[#a04019] m-4 mt-8">
         </div>
         <div>
             <label for="subject">Subject</label>
-            <input type="text" name="subject" id="subject">
+            <input type="text" name="subject" id="subject" class="border-ridge border-2 border-[#a04019] m-2">
         </div>
         <div>
             <label for="message">Message</label>
-            <textarea name="message" id="message" cols="75" rows="25"></textarea>
+            <textarea name="message" id="message" cols="75" rows="25" class="border-ridge border-2 border-[#a04019] m-2"></textarea>
         </div>
         <div>
-            <button type="submit">Submit</button>
+            <button type="submit" class="border-2 border-ridge border-[#a04019] float-right p-4">Submit</button>
         </div>
     </form>
+</div>
 </div>
 </section>
 <script src="pwp.js"> </script>
 </body></html>
 
-<
